@@ -33,3 +33,4 @@ https://garu.css-art.nl
 
 ## Resources
 1. Inspiratie voor het namaken van Garu => https://images.wikia.com/pucca/images/7/7a/Garu.gif 
+2. Reduced-motion-query => https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
