@@ -1,81 +1,81 @@
-*,*::before,*::after{
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
-body{
+
+body {
   background-color: #373a40;
-  display:flex;
-  height:100vh;
+  display: flex;
+  height: 100vh;
   max-width: 100vw;
   align-items: center;
   justify-content: center;
-
 }
 
-.garu{
+.garu {
   transform: scale(0.6);
 }
 
-.garu__head{
+.garu__head {
   position: relative;
 }
 
-.garu__head__hair{
-  width:44rem;
-  height:37rem;
+.garu__head__hair {
+  width: 44rem;
+  height: 37rem;
   border-radius: 50%;
   background-color: black;
-  z-index:0;
+  z-index: 0;
 }
 
-.garu__head__face{
+.garu__head__face {
   background-color: #FFE1C7;
   position: absolute;
-  top:57%;
-  left:50%;
-  width:38rem;
-  height:29rem;
+  top: 57%;
+  left: 50%;
+  width: 38rem;
+  height: 29rem;
   border-radius: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-bottom-left-radius: 47%;
   border-bottom-right-radius: 47%;
 }
 
-.garu__head__face__eye{
-  width:11rem;
-  height:11rem;
+.garu__head__face__eye {
+  width: 11rem;
+  height: 11rem;
   background-color: black;
   position: absolute;
   border-radius: 50%;
 }
 
-.garu__head__face__eye--left{
-  top:10rem;
-  left:0rem;
+.garu__head__face__eye--left {
+  top: 10rem;
+  left: 0rem;
 }
 
-.garu__head__face__eye__white{
-  width:100%;
-  height:100%;
+.garu__head__face__eye__white {
+  width: 100%;
+  height: 100%;
   background-color: white;
   border-radius: 50%;
   transform: scale(0.78);
 }
 
-.garu__head__face__eye__black{
-  height:30%;
-  width:30%;
+.garu__head__face__eye__black {
+  height: 30%;
+  width: 30%;
   background-color: black;
   border-radius: 50%;
   position: absolute;
-  top:50%;
-  left:5%;
-  transform:translateY(-50%);
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
   animation-name: looking;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -83,12 +83,12 @@ body{
   animation-iteration-count: infinite;
 }
 
-.garu__head__face__eye--right{
-  top:10rem;
-  right:0rem;
+.garu__head__face__eye--right {
+  top: 10rem;
+  right: 0rem;
 }
 
-.garu__head__face__brow{
+.garu__head__face__brow {
   width: 12rem;
   height: 2rem;
   background-color: black;
@@ -96,8 +96,8 @@ body{
   top: 32%;
 }
 
-.garu__head__face__brow--left{
-  left:0%;
+.garu__head__face__brow--left {
+  left: 0%;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   animation-name: leftBrow;
@@ -107,8 +107,8 @@ body{
   animation-iteration-count: infinite;
 }
 
-.garu__head__face__brow--right{
-  right:0%;
+.garu__head__face__brow--right {
+  right: 0%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   animation-name: rightBrow;
@@ -118,154 +118,166 @@ body{
   animation-iteration-count: infinite;
 }
 
-.garu__head__face__mouth{
+.garu__head__face__mouth {
   width: 30.5rem;
   height: 7rem;
   background-color: white;
   position: absolute;
-  top:72%;
-  left:50%;
+  top: 72%;
+  left: 50%;
   transform: translateX(-50%);
   border-bottom-left-radius: 10rem;
   border-bottom-right-radius: 10rem;
   border: 1rem solid black;
 }
 
-.garu__head__face__mouth__tooth{
-  height:100%;
+.garu__head__face__mouth__tooth {
+  height: 100%;
   width: 1rem;
   background-color: black;
   position: absolute;
 }
 
-.garu__head__face__mouth__tooth--first{
-    left:20%;
+.garu__head__face__mouth__tooth--first {
+  left: 20%;
 }
 
-.garu__head__face__mouth__tooth--second{
-    left:50%;
-    transform: translateX(-50%);
+.garu__head__face__mouth__tooth--second {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.garu__head__face__mouth__tooth--third{
-  right:20%;
+.garu__head__face__mouth__tooth--third {
+  right: 20%;
 }
 
-.garu__head__ponytail{
+.garu__head__ponytail {
   width: 4rem;
-  height:8rem;
+  height: 8rem;
   position: absolute;
   background-color: red;
   z-index: -1;
-  top:0%;
+  top: 0%;
   border: 1rem solid black;
   overflow: hidden;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  }
+}
 
-.garu__head__ponytail--left{
+.garu__head__ponytail--left {
   transform: rotate(130deg);
-  left:12%;
+  left: 12%;
 }
 
 
-.garu__head__ponytail--right{
-  right:12%;
+.garu__head__ponytail--right {
+  right: 12%;
   transform: rotate(-130deg);
 }
 
-.garu__head__ponytail__stripe{
-  height:100%;
+.garu__head__ponytail__stripe {
+  height: 100%;
   width: 1rem;
   position: absolute;
   background-color: black;
   transform: rotate(90deg);
-  top:12%;
+  top: 12%;
 
 }
 
-.garu__head__ponytail__stripe--left{
-    left: -20%;
+.garu__head__ponytail__stripe--left {
+  left: -20%;
 }
 
 
-.garu__head__ponytail__stripe--right{
-    right: -20%;
+.garu__head__ponytail__stripe--right {
+  right: -20%;
 }
 
-.garu__head__spiky{
-  width:15rem;
-  height:15rem;
+.garu__head__spiky {
+  width: 15rem;
+  height: 15rem;
   position: absolute;
   background-color: black;
-  top:-27%;
+  top: -27%;
+  -webkit-clip-path: polygon(45% 100%, 12% 55%, 42% 57%, 44% 28%, 64% 43%, 86% 27%, 84% 61%, 100% 58%, 67% 99%);
   clip-path: polygon(45% 100%, 12% 55%, 42% 57%, 44% 28%, 64% 43%, 86% 27%, 84% 61%, 100% 58%, 67% 99%);
 }
 
-.garu__head__spiky--left{
-  left:-21%;
+.garu__head__spiky--left {
+  left: -21%;
   transform: rotate(-50deg);
 }
 
-.garu__head__spiky--right{
-  right:-18%;
+.garu__head__spiky--right {
+  right: -18%;
   top: -30%;
   transform: rotate(50deg);
 }
 
 
-@media (min-width: 62.5rem){
-  .garu{
+@media (min-width: 62.5rem) {
+  .garu {
     transform: scale(1);
   }
 }
 
 @keyframes looking {
-  0%{
-    left:5%;
+  0% {
+    left: 5%;
   }
-  10%{
-    left:35%;
+
+  10% {
+    left: 35%;
   }
-  20%{
+
+  20% {
     left: 65%;
   }
-  30%{
-    left:50%;
-    transform: translate(-50%,-50%);
+
+  30% {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  90%{
-    left:50%;
-    transform: translate(-50%,-50%);
+
+  90% {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
-@keyframes leftBrow{
-  0%{
-      transform: rotate(0deg);
+@keyframes leftBrow {
+  0% {
+    transform: rotate(0deg);
   }
-  2%{
-      transform: rotate(20deg);
+
+  2% {
+    transform: rotate(20deg);
   }
-  98%{
-      transform: rotate(20deg);
+
+  98% {
+    transform: rotate(20deg);
   }
-  100%{
-      transform: rotate(0deg);
+
+  100% {
+    transform: rotate(0deg);
   }
 }
 
-@keyframes rightBrow{
-  0%{
-      transform: rotate(0deg);
+@keyframes rightBrow {
+  0% {
+    transform: rotate(0deg);
   }
-  2%{
-      transform: rotate(-20deg);
+
+  2% {
+    transform: rotate(-20deg);
   }
-  98%{
-      transform: rotate(-20deg);
+
+  98% {
+    transform: rotate(-20deg);
   }
-  100%{
-      transform: rotate(0deg);
+
+  100% {
+    transform: rotate(0deg);
   }
 }
