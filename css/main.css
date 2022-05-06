@@ -25,7 +25,7 @@ body {
   position: relative;
 }
 
-.garu__head__hair {
+.garu__headHair {
   width: 44rem;
   height: 37rem;
   border-radius: 50%;
@@ -33,7 +33,7 @@ body {
   z-index: 0;
 }
 
-.garu__head__face {
+.garu__face {
   background-color: #FFE1C7;
   position: absolute;
   top: 57%;
@@ -46,7 +46,7 @@ body {
   border-bottom-right-radius: 47%;
 }
 
-.garu__head__face__eye {
+.garu__eye {
   width: 11rem;
   height: 11rem;
   background-color: black;
@@ -54,12 +54,12 @@ body {
   border-radius: 50%;
 }
 
-.garu__head__face__eye--left {
+.garu__eye--left {
   top: 10rem;
   left: 0rem;
 }
 
-.garu__head__face__eye__white {
+.garu__sclera {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -67,7 +67,7 @@ body {
   transform: scale(0.78);
 }
 
-.garu__head__face__eye__black {
+.garu__pupil {
   height: 30%;
   width: 30%;
   background-color: black;
@@ -83,12 +83,12 @@ body {
   animation-iteration-count: infinite;
 }
 
-.garu__head__face__eye--right {
+.garu__eye--right {
   top: 10rem;
   right: 0rem;
 }
 
-.garu__head__face__brow {
+.garu__brow {
   width: 12rem;
   height: 2rem;
   background-color: black;
@@ -96,7 +96,7 @@ body {
   top: 32%;
 }
 
-.garu__head__face__brow--left {
+.garu__brow--left {
   left: 0%;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -107,7 +107,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-.garu__head__face__brow--right {
+.garu__brow--right {
   right: 0%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -118,7 +118,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-.garu__head__face__mouth {
+.garu__mouth {
   width: 30.5rem;
   height: 7rem;
   background-color: white;
@@ -131,27 +131,27 @@ body {
   border: 1rem solid black;
 }
 
-.garu__head__face__mouth__tooth {
+.garu__tooth {
   height: 100%;
   width: 1rem;
   background-color: black;
   position: absolute;
 }
 
-.garu__head__face__mouth__tooth--first {
+.garu__tooth--first {
   left: 20%;
 }
 
-.garu__head__face__mouth__tooth--second {
+.garu__tooth--second {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.garu__head__face__mouth__tooth--third {
+.garu__tooth--third {
   right: 20%;
 }
 
-.garu__head__ponytail {
+.garu__ponytail {
   width: 4rem;
   height: 8rem;
   position: absolute;
@@ -164,18 +164,18 @@ body {
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-.garu__head__ponytail--left {
+.garu__ponytail--left {
   transform: rotate(130deg);
   left: 12%;
 }
 
 
-.garu__head__ponytail--right {
+.garu__ponytail--right {
   right: 12%;
   transform: rotate(-130deg);
 }
 
-.garu__head__ponytail__stripe {
+.garu__stripe {
   height: 100%;
   width: 1rem;
   position: absolute;
@@ -185,16 +185,16 @@ body {
 
 }
 
-.garu__head__ponytail__stripe--left {
+.garu__stripe--left {
   left: -20%;
 }
 
 
-.garu__head__ponytail__stripe--right {
+.garu__stripe--right {
   right: -20%;
 }
 
-.garu__head__spiky {
+.garu__spiky {
   width: 15rem;
   height: 15rem;
   position: absolute;
@@ -204,12 +204,12 @@ body {
   clip-path: polygon(45% 100%, 12% 55%, 42% 57%, 44% 28%, 64% 43%, 86% 27%, 84% 61%, 100% 58%, 67% 99%);
 }
 
-.garu__head__spiky--left {
+.garu__spiky--left {
   left: -21%;
   transform: rotate(-50deg);
 }
 
-.garu__head__spiky--right {
+.garu__spiky--right {
   right: -18%;
   top: -30%;
   transform: rotate(50deg);
