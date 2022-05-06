@@ -229,6 +229,21 @@ body {
   transform: rotate(50deg);
 }
 
+@media (prefers-reduced-motion) {
+  .garu__pupil, .garu__brow--left, .garu__brow--right{
+    animation-name: "";
+  }
+  .garu__pupil{
+    transform: translate(-50%,-50%);
+    left:50%;
+  }
+  .garu__brow--left{
+    transform: rotate(20deg);
+  }
+  .garu__brow--right{
+    transform: rotate(-20deg);
+  }
+}
 
 @media screen and (min-width: 62.5rem) {
   .garu {

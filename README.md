@@ -17,6 +17,8 @@ Pucca loves Garu, he is a nice guy! Althans, volgens de intro van de gelijknamig
 6. Hoe meerdere animaties een speels effect geven aan een cartoon. 
 6. Hoe animaties asynchroon kunnen lopen maar toch op elkaar afgestemd kunnen worden. Dit kan door een deel van de animatie stil te laten staan.
 7. Een voorbeeld van punt 6 zijn de wenkbrauwen. De wenkbrauwen gaan aan het begin schuin staan, daarna blijven ze dit tot het heen en weer kijken afgelopen is. Daarna worden ze even gereset (horizontaal) en gaan ze weer snel terug. 
+8. Hoe een reduced-motion mediaquery kan worden toegepast. Animaties worden uitgezet wanneer dit het geval is.
+9. Hoe BEM voor enorm lange classnames kan zorgen indien je het niet "platslaat". Met platslaan bedoel ik het hebben van maximaal 1 Block, 1 element en 1 modifier. 
 
 ## Screenshots
 
